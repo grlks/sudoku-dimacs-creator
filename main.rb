@@ -67,7 +67,7 @@ for k in 1 .. numbers
         for j in 1 .. 3
           for i_s in i+1 .. 3
             for j_s in 1 .. 3
-            dimacs << "-#{3*m+1}#{3*n+j}#{k} -#{3*m+i_s}#{3*n+j_s}#{k} 0 \n"
+            dimacs << "-#{3*m+i}#{3*n+j}#{k} -#{3*m+i_s}#{3*n+j_s}#{k} 0 \n"
             clauses += 1
             end
           end
